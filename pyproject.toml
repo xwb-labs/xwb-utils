@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "xwb-utils"
+version = "0.1.0"
+description = "Utilities for Data Science, AI, ML, NLP"
+authors = ["Spence Koehler <KoehlerSB747@gmail.com>"]
+readme = "README.md"
+packages = [{include = "xwb_utils"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.3"
+sklearn = "^0.0"
+pandas = "^1.5.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+ipywidgets = "^8.0.2"
+matplotlib = "^3.6.0"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^7.1.3"
+pylint = "^2.15.3"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
